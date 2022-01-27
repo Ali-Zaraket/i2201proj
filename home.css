@@ -288,7 +288,7 @@ a {
   padding-block: 1.5em;
   justify-content: space-evenly;
   gap: .75em;
-  z-index: 10;
+  z-index: 1000;
   left: 0;
   background: rgba(var(--clr-white), 1);
   border: 1.2px solid rgba(var(--clr-grey), .25);
@@ -657,5 +657,8 @@ footer {
   }
 }
 @media (max-width: 600px){
-  .top-right-link { display: none; }
+  .top-right-link,
+  .search-form { 
+    display: none;
+  }
 }
