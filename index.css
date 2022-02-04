@@ -51,7 +51,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: rgba(var(--clr-dark), 1);
 }
 
 .material-icons-outlined {
@@ -234,6 +233,7 @@ a {
   cursor: pointer;
   height: 100%;
   transition: color 150ms ease;
+  color: rgba(var(--clr-dark), 1);
 }
 
 .nav-item {
@@ -242,12 +242,14 @@ a {
   cursor: pointer;
   height: 100%;
   transition: color 150ms ease;
+  color: rgba(var(--clr-dark), 1);
 }
 .nav-item:hover,
 .responsive-nav-item:hover,
 .res-nav-item:hover {
   margin-top: 2px;
   border-bottom: 2px solid rgba(var(--clr-accent), 1);
+  color: rgba(var(--clr-accent), 1);
 }
 
 .nav-item:last-of-type::before {
@@ -360,16 +362,19 @@ a {
 
 
 #sec1 img {
-  content: url('assets/banner.jpg');
+  content: url('assets/home/banner.jpg');
 }
 #sec2 img {
-  content: url('assets/banner2.webp');
+  content: url('assets/home/banner2.webp');
 }
 #sec3 img {
-  content: url('assets/banner3.webp');
+  content: url('assets/home/banner3.webp');
 }
 #sec4 img {
-  content: url('assets/banner4.jpg');
+  content: url('assets/home/banner4.jpg');
+}
+#sec5 img {
+  content: url('assets/audio/audiobanner.jpg');
 }
 
 .right-banner-block {
@@ -557,6 +562,53 @@ footer {
   color: #b2b2b2;
 }
 
+/*AUDIO CSS:*/
+
+#itemcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 8em 4em;
+}
+
+.itemlist {
+  position: relative;
+  align-items: center;
+  gap: 5em;
+  flex-basis: 280px;
+  flex-grow: .8; 
+  flex-shrink: 0;
+  min-width: 30px;
+  padding: 1em;
+}
+
+.itemlist > a {
+  z-index: 50;
+}
+
+.itemlist::after {
+  position: absolute;
+  content: '';
+  inset: 0;
+  bottom: -5em;
+  border: 2px solid rgba(var(--clr-grey), .25);
+  box-shadow: 0 0 20px rgba(var(--clr-dark), .15);
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 350ms ease-in-out;
+}
+
+.itemlist:hover::after{
+  opacity: 1;
+}
+
+.itemlist img {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* media queries */
 @media (max-width: 1200px) {
@@ -624,17 +676,20 @@ footer {
     --fs-s: .75rem;
   }
   #sec1 img {
-    content: url('assets/banner-res.jpg');
+    content: url('assets/home/banner-res.jpg');
   }
   #sec2 img {
-    content: url('assets/banner2-res.jpg');
+    content: url('assets/home/banner2-res.jpg');
   }
   #sec3 img {
-    content: url('assets/banner3-res.jpg');
+    content: url('assets/home/banner3-res.jpg');
   }
   #sec4 img {
-    content: url('assets/banner4-res.webp');
+    content: url('assets/home/banner4-res.webp');
     min-width: 100vw;
+  }
+  #sec5 img {
+    content: url('assets/audio/audiobanner.jpg');
   }
   #sec4 .right-banner-block {
     position: absolute;
