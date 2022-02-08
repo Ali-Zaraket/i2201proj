@@ -1,0 +1,289 @@
+table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+table tbody tr {
+    line-height: 2.25em;
+}
+
+.frame{
+    text-align: center;
+}
+
+
+#b{
+    color: #ff0000;
+    text-align: center;
+    font-size: 22px;
+}
+
+.b{
+    min-height: 30vh;
+    width: 100%;
+    background-image:  url(./Image/LLGG.jpg) ;
+    background-repeat: repeat-x;
+    background-position: right;
+    position: relative; 
+}
+
+.intro{
+    flex: 1;
+    text-align: right;
+}
+.intro ul{
+    display: inline-block;
+    list-style-type: none;
+}
+.intro ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+
+}
+.a{   
+    border: 1px solid #000000;
+    display: inline-block;
+    padding: 8px 8px;
+    background: rgba(165, 0, 52, 1);
+    position: relative;
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+    transition: background 250ms ease;
+}
+.a:hover {
+    background: rgba(204, 0, 65, 1);
+}
+.class{
+    color: #fff;
+}
+
+
+.frid{
+    border: 1px solid rgba(3,3,3);
+    display: inline-block;
+    padding: 3px 3px;
+    background: transparent;
+    position: relative;
+    margin: 8px 0 10px;
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(3, 3, 3); 
+}
+
+
+.l1{
+    margin-bottom: 5%;
+    
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+    padding-block: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.body {
+    background: #e0e0e0;
+}
+.body dl img {
+    width: 100%;
+    height: 100%;
+    margin-block: 2em;
+}
+
+.img{
+    text-align: center;       
+}
+
+.table-wrap{
+    height: 97vh;
+    width: 80%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.poi{
+    text-align: center;
+}
+
+#cursor{
+    height: 50px;
+    width: 50px;
+    background: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.presantation{
+    display: flex;
+    width: 90%;
+    gap: 2em;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{  
+    min-width: max(200px, 30vw);
+    background: linear-gradient(to right, rgba(255,255,255,1) 40%, rgba(255,255,255,.05));
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    color: rgba(165, 0, 52, 1);
+}
+
+.intro-text-p{
+    margin-top: 5px;
+    font-size: 22px;
+    color:#585772
+}
+
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-select{
+    border: 2px solid #ff0000;
+    background: transparent;
+    color: #ff0000;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-add{
+    background: #ff0000;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    margin: 30px 0px 0px 30px;
+}
+
+.cover{
+    flex: 1;
+    z-index: -1;
+}
+
+.cover img{
+    height: 60vh;
+    margin-left: -10em;
+}
+
+.presantation2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+}
+.presantation2 > * {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.intro-text h2{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #ff0000, #f88989);
+    -webkit-text-fill-color: transparent;
+}
+
+.cover2{
+    flex: 1;
+}
+.cover2 video{
+    height: 60vh;
+}
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.course-col{
+    flex-basis: 31%;
+    background: #fce6e6;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0,0.3);
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width:100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(165, 0, 52, .8); 
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+@media (max-width: 800px){
+    .row {
+        flex-direction: column;
+    }
+}
