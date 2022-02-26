@@ -1,0 +1,110 @@
+.container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 100px;
+  margin: 0 350px;
+}
+.specs {
+  margin: 40px 0 0 50px;
+  text-align: center;
+}
+.name {
+  font-size: 14px;
+  color: darkgrey;
+  margin: 20px 0 0 50px;
+  text-align: center;
+}
+hr {
+  margin-left: 40px;
+  margin-right: -40px;
+}
+.price {
+  text-align: center;
+  margin: 20px 0 0 40px;
+}
+
+.prevprice {
+  text-decoration: line-through;
+  margin: 5px 0 0 50px;
+  text-align: center;
+  color: red;
+}
+
+span {
+  font-size: 20px;
+}
+/* .btn1 {
+  text-align: center;
+  margin: 20px 0 0 40px;
+  padding: 5px 30px 5px 30px;
+}
+
+.btn2 {
+  text-align: center;
+  margin: 10px 0 0 40px;
+  padding: 5px 23px 5px 23px;
+} */
+
+nav ul {
+  list-style-type: none;
+  margin-left: 30px;
+  padding: 0;
+}
+
+nav ul li {
+  --c: red;
+  color: var(--c);
+  font-size: 16px;
+  border: 0.1em solid var(--c);
+  border-radius: 0.5em;
+  width: 10em;
+  height: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 2em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+nav ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+nav ul li:hover {
+  color: black;
+}
+
+nav ul li:hover span {
+  transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+  --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+  --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+  --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+  --n: 4;
+}
