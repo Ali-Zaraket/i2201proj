@@ -1,0 +1,193 @@
+body{
+  margin:0;
+  overflow-x: hidden;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  margin-bottom: 10em;
+}
+
+.title h1{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#000;
+  font-weight:400;
+  text-align:center;
+  font-size: 4rem;
+}
+
+.container img{
+  width: 100%; 
+}
+
+.top-banner{
+  width: 96%;
+  position: absolute;  
+  margin-inline: 2%;
+  margin-top: 1em;
+}
+.banner-title{
+  align-items: center; 
+}
+.banner-title h2{
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:550;    
+  text-align:center;
+  width:100%;
+  font-size:45px;
+}
+.top-banner-words{
+  margin-top: 2em;
+  font-family: sans-serif;
+  text-align:center;  
+  font-size: 16px;
+}
+.button {
+  background-color: #a50034;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  min-width: 80px;
+  padding: 7px 24px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-family: "LG Smart Bold",sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: middle;
+  white-space: normal;
+  cursor: pointer;
+}
+
+.top-banner-button{
+  margin-top: 1em;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #be023d;
+  color: white;
+  transition-duration: 0.2s;
+}
+
+.inner-top-banner{
+  display:block;
+  align-items: center;
+}
+
+.first-row-products ul {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.first-row-products ul > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.first-row-products button{
+  border:white; 
+  padding : 2px;
+  margin:2px;
+  color:black;
+  background-color:white;
+  border-radius: 33px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+.first-row-products button:hover{
+  text-decoration: underline;
+}
+
+.bottom-banner {
+  margin-top: 10em;
+}
+
+.bottom-banner img{
+  z-index: -1;
+  position: absolute;
+  line-height: 1.5;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.text-block{
+  z-index: 1;
+  position: relative;
+  max-width: 1424px;
+
+  padding-left: 100px;
+  padding-right: 50px;
+  padding-top: 250px;
+  padding-bottom: 30px;
+}
+
+.text-block h4{
+  font-size: 25px;
+  line-height: 24px;
+  margin-bottom: 17px;
+  margin-top: 55px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color:#333;
+  margin:0px 0px 7px;
+  text-align: left;
+  word-spacing:2px;
+}
+
+.text-block h2{
+  color:#000;
+  font-size: 50px;
+  line-height: 1;
+  font-family:sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+  letter-spacing:1px;
+  word-spacing:2px;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+.text-block p{
+  font-size: 20px;
+  line-height: 24px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color:#333;
+  margin:0px 0px 7px;
+  text-align: left;
+  padding-top:10px;
+  padding-bottom:10px;
+  letter-spacing:1px;
+  word-spacing:2px;
+}
+
+.text-block button{
+  margin-top: 10px;
+}
+
+
+@media (max-width: 1200px) {
+  .top-banner {
+    position: relative;
+  }
+}

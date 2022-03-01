@@ -1,6 +1,5 @@
 let res_nav = document.querySelector('.responsive-navbar');
 let nav_item = document.querySelector('.responsive-nav-item');
-const scrollContainer = document.querySelector(".hs");
 
 nav_item.addEventListener('mouseover', () => {
   res_nav.style.display = 'flex';
@@ -12,18 +11,12 @@ res_nav.addEventListener('mouseout', () => {
   res_nav.style.display = 'none';
 })
 
-scrollContainer.addEventListener("wheel", (e) => {
-  e.preventDefault();
-  scrollContainer.scrollLeft += e.deltaY;
-});
-
-
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll('.slide-in');
 
 const appearOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -250px 0px"
+  rootMargin: "0px 0px -150px 0px"
 }
 
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
