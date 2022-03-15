@@ -128,8 +128,6 @@ table tbody tr {
 }
 
 .introduction{  
-    min-width: max(200px, 30vw);
-    background: linear-gradient(to right, rgba(255,255,255,1) 40%, rgba(255,255,255,.05));
     height: 60vh;
     display: flex;
     align-items: center;
@@ -179,7 +177,6 @@ table tbody tr {
 
 .cover img{
     height: 60vh;
-    margin-left: -10em;
 }
 
 .presantation2{
